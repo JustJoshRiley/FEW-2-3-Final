@@ -1,0 +1,17 @@
+.StarWars > form > input {
+    border-radius: 10px;
+    border: 1px solid black;
+    min-height: 20px;
+    color: black;
+    font-weight: 900;
+    font-size: large;
+}
+
+.StarWars > form > button {
+    height: 25px;
+    font-size: large;
+    border: 1px solid black;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: white;
+}
