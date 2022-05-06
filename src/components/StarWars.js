@@ -7,6 +7,14 @@ function StarWars() {
     const [query, setQuery] = useState('')
     const dispatch = useDispatch()
 
+    const onChange = (e) => {
+        if (e.target.value === '17' || e.target.value > 83 || e.target.value < 1) {
+            alert("Not a valid number to query. Sorry sucker")
+        } else {
+            setQuery(e.target.value)
+        }
+    }
+
     return (
         <div className='StarWars'>
             <form
@@ -18,7 +26,7 @@ function StarWars() {
                 <input
                     type="number"
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={onChange}
                 />
                 <button
                     type="submit"
